@@ -1,0 +1,167 @@
+.panel {
+  background: #2C3E50;
+  z-index: 9999;
+  position: fixed;
+  left: -15.625em; /*or width of your navigation panel*/
+  width: 15.625em; /*should match the above value*/
+}
+
+.panel ul {
+  border-top: 2px solid #34495D;
+}
+
+.panel a {
+  display: block;
+  border-bottom: 2px solid #34495D;
+  padding: 1em;
+}
+
+.panel a:link,
+.panel a:visited {
+  color: #fff;
+}
+
+.panel a:hover,
+.panel a:active {
+  background: #25B89A;
+}
+
+.menu-link:link, .menu-link:visited {
+  color: #fff;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+}
+
+.menu-link {
+  position:  absolute;        /* 要素の配置方法を指定 */       /* 上からの位置指定 */
+  font-size: 1.5em;
+}
+
+
+.masthead {
+  background: #34495D;
+  color: #fff;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+  margin: 0;
+  line-height: 1;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.wrap {
+  position: absolute;
+  max-width: 800px;
+  margin: 0.5em;
+  padding: 0px;
+}
+
+
+
+li {
+  list-style:none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+    margin: 0;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.app {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    z-index: 0;
+}
+
+
+.menu-link,.app{
+  position:absolute;
+}
+
+.menu-link{
+  z-index: 100;
+}
+
+@media screen and (min-width: 767px) {
+  .app {
+      width: 767px;
+  }
+}
+
+
+h2 {
+  margin: 0;
+}
+
+.bpm-container .control-grid {
+  grid-template-columns: 1fr 60px 1fr;
+}
+
+.division-container .control-grid {
+  grid-template-columns: 1fr 40px 1fr;
+}
+
+.control-grid {
+  display: grid;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.control-grid .value-label {
+  font-size: xx-large;
+}
+
+.control-grid .control.decrement {
+  text-align: right;
+}
+
+.control-grid .control.increment {
+  text-align: left;
+}
+
+.division-container {
+  margin: 32px 0;
+}
+
+.play-container {
+  margin: 18px 0;
+}
+
+.division-container .division {
+  margin: 16px 2px;
+  display: grid;
+  grid-template-columns: 0.6fr 0.8fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.mdl-logo {
+  margin-bottom: 0;
+}
+
+.mdl-mini-footer__link-list {
+  line-height: 36px;
+}

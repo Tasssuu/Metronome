@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>うんぽにゃ！</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/bigSlide.js"></script>
+	<link rel="stylesheet" href="style.css">
+<style>
+	.wrap { 
+		position: relative; 
+	}
+	.panel {
+		position: fixed;
+		left: -15.625em;
+		width: 15.625em;
+	}
+</style>
+
+</head>
+<body>
+	
+<nav id="menu" class="panel" role="navigation">
+    <ul>
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M9 3v10H8V3h1z"/>
+                <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"/>
+            </svg>
+            ほーむ
+            
+        </li>
+
+        
+        <li><a href="#">google</a></li>
+        <li><a href="#">写真</a></li>
+        <li><a href="#">スペイン</a></li>
+        <li><a href="#">その他</a></li>
+    </ul>
+</nav>
+<div class=" masthead">
+	<div class="wrap push" style = "left: 0px; transition: left 300ms ease 0s;">
+		<a href="#menu" class="menu-link">&#9776;</a>
+		<h1>メトロノーム</h1>
+	</div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
+</body>
+</html>
